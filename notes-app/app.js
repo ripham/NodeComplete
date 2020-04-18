@@ -1,9 +1,8 @@
+const validator = require('validator')
+const chalk = require('chalk')
 const getNotes = require('./notes.js')
 
 console.log(getNotes())
 
-// const add = require('./utils.js')
-
-// const sum = add(4, -2)
-
-// console.log(sum)
+console.log(validator.isURL('https://google.com'))
+console.log(chalk.green('Success!!!!'))
